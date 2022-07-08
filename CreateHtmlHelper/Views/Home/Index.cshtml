@@ -1,0 +1,8 @@
+﻿@model IEnumerable<string>
+@using CreateHtmlHelper.Helpers
+
+<h2>Simple Create List: </h2>
+@Html.SimpleCreateList(@Model)
+<br />
+<h2>Create List With TagBuilder: </h2>
+@ListHelper.CreateListWithTagBuilder(Html, @Model)
