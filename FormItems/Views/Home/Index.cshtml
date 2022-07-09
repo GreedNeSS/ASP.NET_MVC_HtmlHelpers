@@ -1,0 +1,33 @@
+﻿@using(Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    @Html.Label("name", "Введите имя:")
+    @Html.TextBox("name")
+    <br />
+    @Html.Label("age", "Введите возраст:")
+    @Html.TextBox("age", "", new { type = "number" })
+    <br />
+    @Html.Label("password", "Введите пароль:")
+    @Html.Password("password", "default")
+    <br />
+    @Html.Label("isMaried", "Вы женаты?")
+    @Html.CheckBox("isMaried", true)
+    <br />
+    @Html.Label("country.name", "Выберите страну проживания:")
+    <br />
+    @Html.RadioButton("country.name", "Russia")
+    <span>Россия</span><br />
+    @Html.RadioButton("country.name", "USA")
+    <span>США</span><br />
+    @Html.RadioButton("country.name", "China")
+    <span>Китай</span><br />
+    <br />
+    @Html.Label("languages", "Выберите языки которые вы знаете:")
+    <br />
+    @Html.ListBox("languages", new MultiSelectList(new string[] {"CSharp", "JavaScript", "Pyton", "Java"}))
+    <br />
+    @Html.Label("info", "Информация")
+    <br />
+    @Html.TextArea("info", "Информация о себе", 3, 40, null)
+    <br />
+    <button type="submit">Отправить</button>
+}

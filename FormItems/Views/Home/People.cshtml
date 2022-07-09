@@ -1,0 +1,8 @@
+﻿@model List<FormItems.Models.Person>
+
+@using (@Html.BeginForm())
+{
+    @Html.Label("id", "Выберите нужного пользователя:")
+    @Html.DropDownList("id", new SelectList(@Model, "Id", "Name"))
+    <button type="submit">Отправить</button>
+}

@@ -1,0 +1,8 @@
+﻿@using FormItems.Models
+
+@using(@Html.BeginForm())
+{
+    @Html.DropDownList("language", @Html.GetEnumSelectList(typeof(Languages)))
+    <br />
+    <input type="submit" value="Отправить">
+}
