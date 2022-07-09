@@ -1,0 +1,49 @@
+﻿@using TypedHelpers.Models
+@model Person
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <h1 class="display-4">Создание пользователя:</h1>
+    @using(Html.BeginForm("Index", "Home", FormMethod.Post))
+    {
+        @Html.LabelFor(m => m.Name, "Введите имя:", new { @class = "form-label"})
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control"})
+        <br />
+        @Html.LabelFor(m => m.Age, "Введите возраст:", new { @class = "form-label"})
+        @Html.TextBoxFor(m => m.Age, "", new { type = "number", @class = "form-control" })
+        <br />
+        @Html.LabelFor(m => m.Password, "Введите пароль:", new { @class = "form-label"})
+        @Html.PasswordFor(m => m.Password, new { @class = "form-control"})
+        <br />
+        <div class="mb-3 form-check">
+            @Html.CheckBoxFor(m => m.IsMaried, new { @class = "form-check-input" })
+            @Html.LabelFor(m => m.IsMaried, "Вы женаты?", new { @class = "form-check-label"})
+        </div>
+        @Html.LabelFor(m => m.Country.Name, "Выберите страну проживания:", new { @class = "form-label"})
+        <br />
+        <div class="form-check">
+            @Html.RadioButtonFor(m => m.Country.Name, "Russia", new { @class = "form-check-input"})
+            @Html.LabelFor(m => m.Country.Name, "Россия", new { @class = "form-check-label"})
+        </div>
+        <div class="form-check">
+            @Html.RadioButtonFor(m => m.Country.Name, "USA", new { @class = "form-check-input"})
+            @Html.LabelFor(m => m.Country.Name, "США", new { @class = "form-check-label"})
+        </div>
+        <div class="form-check">
+            @Html.RadioButtonFor(m => m.Country.Name, "China", new { @class = "form-check-input"})
+            @Html.LabelFor(m => m.Country.Name, "Китай", new { @class = "form-check-label"})
+        </div>
+        <br />
+        @Html.LabelFor(m => m.Languages, "Выберите языки которые вы знаете:", new { @class = "form-label"})
+        <br />
+        @Html.ListBoxFor(m => m.Languages, new MultiSelectList(new string[] {"CSharp", "JavaScript", "Pyton", "Java"}), new { @class = "form-select"})
+        <br />
+        @Html.LabelFor(m => m.Info, "Информация", new { @class = "form-label"})
+        @Html.TextAreaFor(m => m.Info, 3, 40, new { @class = "form-control"})
+        <br />
+        <button type="submit" class="btn btn-success">Отправить</button>
+    }
+</div>
