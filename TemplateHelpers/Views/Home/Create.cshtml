@@ -1,0 +1,7 @@
+﻿@model TemplateHelpers.Models.Person
+
+@using(@Html.BeginForm("Create", "Home", FormMethod.Post))
+{
+    @Html.EditorForModel()
+    <button>Отправить</button>
+}

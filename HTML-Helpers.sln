@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreateHtmlHelper", "CreateH
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormItems", "FormItems\FormItems.csproj", "{2EB6BAED-1F5D-44CB-9E5B-6D3AD2E3D7E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypedHelpers", "TypedHelpers\TypedHelpers.csproj", "{0C7F0D66-C207-466B-BB55-F7E83B717DAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TypedHelpers", "TypedHelpers\TypedHelpers.csproj", "{0C7F0D66-C207-466B-BB55-F7E83B717DAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateHelpers", "TemplateHelpers\TemplateHelpers.csproj", "{955BC492-DDAC-40E7-82A0-94700FFBA84B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{0C7F0D66-C207-466B-BB55-F7E83B717DAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C7F0D66-C207-466B-BB55-F7E83B717DAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C7F0D66-C207-466B-BB55-F7E83B717DAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{955BC492-DDAC-40E7-82A0-94700FFBA84B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{955BC492-DDAC-40E7-82A0-94700FFBA84B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{955BC492-DDAC-40E7-82A0-94700FFBA84B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{955BC492-DDAC-40E7-82A0-94700FFBA84B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

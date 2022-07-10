@@ -1,0 +1,18 @@
+﻿@model TemplateHelpers.Models.User
+
+<h2>Созать пользователя:</h2>
+
+@using(@Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    <div>
+        <p>Введите имя:</p>
+        @Html.EditorFor(m => m.Name)
+    </div>
+    <div>
+        <p>Введите возраст:</p>
+        @Html.EditorFor(m => m.Age)
+    </div>
+    <div>
+        <button>Отправить</button>
+    </div>
+}
