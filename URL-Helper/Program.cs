@@ -1,6 +1,7 @@
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddMvc();
 var app = builder.Build();
 
-app.MapGet("/", () => "Hello World!");
+app.MapControllerRoute("default", "api/{action=Index}/{Id?}", new { controller = "Home" });
 
 app.Run();
