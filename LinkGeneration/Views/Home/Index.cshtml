@@ -1,0 +1,28 @@
+﻿<h2>Link Generation</h2>
+
+<h3>ActionLink</h3>
+@Html.ActionLink("@Html.ActionLink(\"Текст ссылки\", \"About\")", "About")
+<br />
+@Html.ActionLink(
+    "@Html.ActionLink(\"Текст ссылки\", \"Users\", \"Home\", new { Id = 23, Name = \"GreeD\"})",
+    "Users",
+    "Home",
+    new { Id = 23, Name = "GreeD"})
+<br />
+@Html.ActionLink(
+    "@Html.ActionLink(\"Текст ссылки\", \"Users\", \"Home\", new { Id = 23, Name = \"GreeD\"}, new { id = \"link\", @class = \"link-simple\"})",
+    "Users",
+    "Home",
+    new { Id = 23, Name = "GreeD"},
+    new { id = "link", @class = "link-simple"})
+<br />
+
+<h3>RouteLink</h3>
+@Html.RouteLink("@Html.RouteLink(\"Текст ссылки\", \"UserList\")", "UserList")
+<br />
+@Html.RouteLink(
+    "@Html.RouteLink(\"Текст ссылки\", new { Id = 23, Name = \"GreeD\", controller = \"Home\"," + 
+    " action = \"Users\"}, new { id = \"link\", @class = \"link-simple\"})",
+    new { Id = 23, Name = "GreeD", controller = "Home", action = "Users"},
+    new { id = "link", @class = "link-simple"})
+<br />

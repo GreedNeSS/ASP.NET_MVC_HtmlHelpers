@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormItems", "FormItems\Form
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TypedHelpers", "TypedHelpers\TypedHelpers.csproj", "{0C7F0D66-C207-466B-BB55-F7E83B717DAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateHelpers", "TemplateHelpers\TemplateHelpers.csproj", "{955BC492-DDAC-40E7-82A0-94700FFBA84B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateHelpers", "TemplateHelpers\TemplateHelpers.csproj", "{955BC492-DDAC-40E7-82A0-94700FFBA84B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkGeneration", "LinkGeneration\LinkGeneration.csproj", "{220DC880-64E1-4E46-9631-429FB465E02F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{955BC492-DDAC-40E7-82A0-94700FFBA84B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{955BC492-DDAC-40E7-82A0-94700FFBA84B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{955BC492-DDAC-40E7-82A0-94700FFBA84B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{220DC880-64E1-4E46-9631-429FB465E02F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{220DC880-64E1-4E46-9631-429FB465E02F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{220DC880-64E1-4E46-9631-429FB465E02F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{220DC880-64E1-4E46-9631-429FB465E02F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
